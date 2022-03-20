@@ -2,7 +2,7 @@ import React, { Fragment } from "react";
 
 import "./Cabecera.css";
 
-export default function Cabecera({ filtered, deleteTag, clear }) {
+export default function Cabecera({ filtered, deleteTag, limpiar }) {
 	return (
 		<Fragment>
 			<div className="header"></div>
@@ -18,7 +18,7 @@ export default function Cabecera({ filtered, deleteTag, clear }) {
 							: ""}
 					</div>
 
-					<p className="clear" onClick={() => clear()}>
+					<p className="clear" onClick={() => limpiar()}>
 						Clear
 					</p>
 				</div>
