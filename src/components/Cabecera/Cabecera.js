@@ -2,7 +2,7 @@ import React, { Fragment } from "react";
 
 import "./Cabecera.css";
 
-export default function Cabecera({ filtered, EliminarEtiqueta, limpiar }) {
+export default function Cabecera({ filtered, deleteTag, clear }) {
 	return (
 		<Fragment>
 			<div className="cabecera"></div>
@@ -11,14 +11,14 @@ export default function Cabecera({ filtered, EliminarEtiqueta, limpiar }) {
 					<div className="lista-etiquetas">
 						{filtered
 							? filtered.map((etiqueta, index) => (
-									<button key={index} onClick={e => EliminarEtiqueta(e.target.innerHTML)} className="etiqueta">
+									<button key={index} onClick={e => deleteTag(e.target.innerHTML)} className="etiqueta">
 										{etiqueta}
 									</button>
 							  ))
 							: ""}
 					</div>
 
-					<p className="limpiar" onClick={() => limpiar()}>
+					<p className="limpiar" onClick={() => clear()}>
 						Clear
 					</p>
 				</div>
