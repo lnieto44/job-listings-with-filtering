@@ -1,0 +1,59 @@
+/* banner */
+.cabecera {
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	width: 100%;
+	height: 100%;
+	background-image: url("https://res.cloudinary.com/academia-geek-1/image/upload/v1647720688/Jobs%20listing/bg-header-mobile_c9cg9g.svg");
+	background-color: hsl(180, 29%, 50%);
+	padding: 5rem;
+	border-radius: 3px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.Tablero {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	max-width: 80vw;
+	margin: 20px auto;
+	margin-top: -40px;
+	padding: 0.5rem;
+	background-color: hsl(180, 31%, 95%);
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	border-radius: 6px;
+	cursor: pointer;
+}
+.lista-etiquetas {
+	max-width: 65vw;
+}
+.etiqueta {
+	margin-top: 10px;
+	margin-left: 5px;
+	color: hsl(180, 31%, 95%);
+	background-color: hsl(180, 29%, 50%);
+	padding: 10px;
+	border-radius: 3px;
+}
+
+
+
+.limpiar {
+	padding: 5px;
+	margin-right: 0px;
+	border-radius: 3rem;
+	background-color: inherit;
+	color: hsl(180, 29%, 50%);
+}
+.limpiar:hover {
+	text-decoration: underline;
+}
+@media screen and (min-width: 1200px) {
+	.cabecera {
+		background-image: url("https://res.cloudinary.com/academia-geek-1/image/upload/v1647720641/Jobs%20listing/bg-header-desktop_jf6kts.svg");
+		background-color: hsl(180, 29%, 50%);
+	}
+
+}
+
+
+

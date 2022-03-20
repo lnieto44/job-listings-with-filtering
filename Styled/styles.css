@@ -1,0 +1,29 @@
+.header {
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	width: 100%;
+	height: 100%;
+	background-image: url("https://res.cloudinary.com/academia-geek-1/image/upload/v1647720688/Jobs%20listing/bg-header-mobile_c9cg9g.svg");
+	background-color: hsl(180, 29%, 50%);
+	padding: 5rem;
+	border-radius: 3px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+.clear {
+	padding: 5px;
+	margin-right: 0px;
+	border-radius: 3rem;
+	background-color: inherit;
+	color: hsl(180, 29%, 50%);
+}
+.clear:hover {
+	text-decoration: underline;
+}
+ 
+@media screen and (min-width: 1200px) {
+	.header {
+		background-image: url("https://res.cloudinary.com/academia-geek-1/image/upload/v1647720641/Jobs%20listing/bg-header-desktop_jf6kts.svg");
+		background-color: hsl(180, 29%, 50%);
+    }}

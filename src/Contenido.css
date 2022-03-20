@@ -1,0 +1,26 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #effafa;
+	color: #2c3a3a;
+	width: 100%;
+	font-family: "Spartan", sans-serif;
+}
+.contenido {
+	margin: 25rem 1rem 40px 1rem;
+}
+@media screen and (min-width: 1200px) {
+	.contenido  {
+		padding-left: 5rem;
+		padding-right: 5rem;
+	}
+	body {
+		margin-right: 20px;
+	}
+}
+
+/*# sourceMappingURL=App.css.map */
