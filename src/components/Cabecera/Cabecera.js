@@ -5,20 +5,20 @@ import "./Cabecera.css";
 export default function Cabecera({ filtered, deleteTag, clear }) {
 	return (
 		<Fragment>
-			<div className="cabecera"></div>
+			<div className="header"></div>
 			{filtered.length > 0 && (
-				<div className="Tablero">
-					<div className="lista-etiquetas">
+				<div className="board">
+					<div className="tag-list">
 						{filtered
-							? filtered.map((etiqueta, index) => (
-									<button key={index} onClick={e => deleteTag(e.target.innerHTML)} className="etiqueta">
-										{etiqueta}
+							? filtered.map((tag, index) => (
+									<button key={index} onClick={e => deleteTag(e.target.innerHTML)} className="tag">
+										{tag}
 									</button>
 							  ))
 							: ""}
 					</div>
 
-					<p className="limpiar" onClick={() => clear()}>
+					<p className="clear" onClick={() => clear()}>
 						Clear
 					</p>
 				</div>

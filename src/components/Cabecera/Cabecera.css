@@ -1,5 +1,5 @@
 /* banner */
-.cabecera {
+.header {
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
 	width: 100%;
@@ -10,7 +10,7 @@
 	border-radius: 3px;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-.Tablero {
+.board {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -23,10 +23,10 @@
 	border-radius: 6px;
 	cursor: pointer;
 }
-.lista-etiquetas {
+.tag-list {
 	max-width: 65vw;
 }
-.etiqueta {
+.tag {
 	margin-top: 10px;
 	margin-left: 5px;
 	color: hsl(180, 31%, 95%);
@@ -37,23 +37,193 @@
 
 
 
-.limpiar {
+.clear {
 	padding: 5px;
 	margin-right: 0px;
 	border-radius: 3rem;
 	background-color: inherit;
 	color: hsl(180, 29%, 50%);
 }
-.limpiar:hover {
+.clear:hover {
 	text-decoration: underline;
 }
 @media screen and (min-width: 1200px) {
-	.cabecera {
+	.header {
 		background-image: url("https://res.cloudinary.com/academia-geek-1/image/upload/v1647720641/Jobs%20listing/bg-header-desktop_jf6kts.svg");
 		background-color: hsl(180, 29%, 50%);
 	}
 
 }
 
+
+
+/*  tarjetas */
+
+h4 {
+	font-weight: 700;
+}
+span {
+	margin: 10px;
+}
+img {
+	position: absolute;
+	top: -35px;
+	left: 20px;
+	width: 66px;
+}
+.card-body {
+	display: grid;
+	position: relative;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	padding: 25px 12px;
+	width: 100%;
+	margin-top: 100px;
+	margin-bottom: 30px;
+	border-radius: 5px;
+	background-color: #fff;
+	transition: all 0.2s;
+}
+.card-body:hover {
+	transform: translateY(-0.2rem);
+}
+.card-body:first-child {
+	margin-top: -300px;
+}
+.special {
+	border-left: 0.5rem solid hsl(180, 29%, 50%);
+}
+.position {
+	font-weight: 700;
+	margin-top: 3px;
+	margin-bottom: 3px;
+}
+.position:hover {
+	color: hsl(180, 29%, 50%);
+	cursor: pointer;
+}
+.spec {
+	display: flex;
+	margin-top: 10px;
+	margin-bottom: 15px;
+	margin-left: 10px;
+}
+.name {
+	color: teal;
+}
+
+.new {
+	font-size: 12.5px;
+	border-radius: 3rem;
+	color: hsl(180, 31%, 95%);;
+	background-color: hsl(180, 29%, 50%);
+	margin-left: 15px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	padding: 0.5rem;
+}
+.featured {
+	font-size: 12px;
+	border-radius: 3rem;
+	background-color: hsl(180, 14%, 20%);
+	color: hsl(180, 31%, 95%);
+	padding: 0.5rem;
+	margin-bottom: 10px;
+	margin-left: 5px;
+}
+.gray-info {
+	color: grey;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+.list {
+	display: flex;
+	margin-left: -15px;
+}
+
+.list li {
+	margin-left: 25px;
+	margin-right: 10px;
+	font-size: 14px;
+}
+
+.list :first-child {
+	list-style-type: none;
+}
+
+.filters {
+	display: grid;
+	border-top: 1px solid hsl(180, 8%, 52%);
+	padding: -40px;
+	margin-top: 5px;
+	margin-left: 10px;
+	margin-right: 5px;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 5px;
+}
+button {
+	border: none;
+	font-weight: 700;
+	font-size: 15px;
+	transition: all 0.2s;
+}
+button:focus {
+	border: 1px solid hsl(180, 8%, 52%);
+	outline: none;
+	transform: translateY(-0.1rem);
+	box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+}
+button:hover {
+	transform: translateY(-0.2rem);
+	box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+.span {
+	margin-top: 10px;
+	margin-left: 0px;
+	background-color: hsl(180, 31%, 95%);
+	color: hsl(180, 29%, 50%);
+	padding: 10px;
+	border-radius: 3px;
+	cursor: pointer;
+}
+.span:hover {
+	background-color: hsl(180, 29%, 50%);
+	color: hsl(180, 31%, 95%);
+}
+
+@media only screen and (min-width: 1200px) {
+	img {
+		position: initial;
+		margin: 20px;
+		margin-right: -5rem;
+	}
+	.card-body {
+		position: initial;
+		display: grid;
+		grid-template-columns: min-content 1fr 1fr 1fr;
+		grid-gap: 7rem;
+		/* box-shadow: 5px 5px 5px 5px rgba(180, 178, 178, 0.3), 5px 5px 5px rgba(180, 178, 178, 0.3); */
+		margin-top: 10px;
+		padding: 20px;
+		width: 100%;
+	}
+	.semi-box {
+		margin-top: 10px;
+		padding-left: -20px;
+		padding-right: 20px;
+		width: 400px;
+	}
+	.filters {
+		display: flex;
+		border-top: none;
+		justify-content: center;
+		align-items: flex-start;
+		margin-top: 5px;
+		margin-left: 10px;
+	}
+	button {
+		margin-right: 10px;
+		padding: 10px;
+	}
+}
 
 
